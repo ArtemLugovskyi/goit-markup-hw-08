@@ -1,0 +1,70 @@
+.moto-container .button {
+  display: inline-block;
+  align-content: space-around;
+  width: 200px;
+  height: 50px;
+  color: #e5e5e5;
+  background-color: #2196f3;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.buttons {
+  display: flex;
+  justify-items: center;
+}
+.buttons ul {
+  margin: auto;
+  padding: 0;
+  list-style: none;
+  width: 611px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: center;
+  margin-bottom: 54px;
+}
+.buttons button {
+  width: auto;
+  height: 38px;
+  color: #212121;
+  background-color: #f5f4fa;
+  font-size: 16px;
+  line-height: 1.63;
+  font-weight: 700;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 5px;
+  margin-right: 10px;
+  text-align: center;
+  border-style: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+button:hover,
+button:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+  cursor: pointer;
+}
+
+//footer
+.footer-form-button {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  color: #eeeeee;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  border-style: none;
+  border-radius: 5px;
+  background-color: #2196f3;
+  cursor: pointer;
+}
