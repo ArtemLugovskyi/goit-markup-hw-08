@@ -33,8 +33,7 @@ a {
   color: #000000;
 }
 
-a:hover,
-a:focus {
+a:hover, a:focus {
   color: #2196f3;
 }
 
@@ -54,7 +53,11 @@ img {
   display: block;
 }
 
-a.logo {
+.logo > span {
+  color: #2196f3;
+}
+
+a .logo {
   width: 145px;
   height: 31px;
   color: #000000;
@@ -66,11 +69,7 @@ a.logo {
   margin-right: 93px;
 }
 
-.logo > span {
-  color: #2196f3;
-}
-
-.footer-container a.logo {
+.footer-container a .logo {
   color: #ffffff;
 }
 
@@ -123,8 +122,7 @@ a.logo {
   display: block;
 }
 
-.modal-close-button-icon:hover,
-.modal-close-button-icon:focus {
+.modal-close-button-icon:hover, .modal-close-button-icon:focus {
   fill: #2196f3;
 }
 
@@ -135,11 +133,6 @@ a.logo {
   color: #757575;
 }
 
-.modal-form-input-wrapper {
-  display: block;
-  position: relative;
-}
-
 .modal-form p {
   color: #212121;
   font-size: 20px;
@@ -148,6 +141,11 @@ a.logo {
   line-height: auto;
   font-family: Roboto;
   margin: 12px 0;
+}
+
+.modal-form-input-wrapper {
+  display: block;
+  position: relative;
 }
 
 .modal-form-input {
@@ -178,11 +176,6 @@ a.logo {
   margin-bottom: 4px;
 }
 
-.modal-form-input:focus + .modal-form-input-image {
-  outline: none;
-  fill: #2196f3;
-}
-
 .modal-form-input-image {
   position: absolute;
   display: block;
@@ -193,6 +186,11 @@ a.logo {
   transform: translateY(-50%);
   fill: #212121;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-input:focus + .modal-form-input-image {
+  outline: none;
+  fill: #2196f3;
 }
 
 .modal-form-input-message {
@@ -220,15 +218,7 @@ a.logo {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-form-checkbox-policy:checked + .modal-form-label-policy::before {
-  background-image: url("../images/icon_check.png");
-  background-repeat: no-repeat;
-  outline: none;
-  border: none;
-}
-
 .modal-form-label-policy::before {
-  content: "";
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -238,6 +228,13 @@ a.logo {
   left: 0px;
   top: 0px;
   position: absolute;
+}
+
+.modal-form-checkbox-policy:checked + .modal-form-label-policy::before {
+  background-image: url("../images/icon_check.png");
+  background-repeat: no-repeat;
+  outline: none;
+  border: none;
 }
 
 .modal-form-label-policy {
@@ -251,6 +248,10 @@ a.logo {
 .modal-form-label-policy a {
   color: #2196f3;
   text-decoration: underline;
+}
+
+.modal-form-label-policy:hover {
+  cursor: pointer;
 }
 
 .modal-form-button {
@@ -268,12 +269,7 @@ a.logo {
   padding: 12px 16px;
   text-transform: uppercase;
   margin-top: 20px;
-  cursor: pointer;
   align-self: center;
-}
-
-.modal-form-label-policy:hover {
-  cursor: pointer;
 }
 
 .social-links {
@@ -292,14 +288,8 @@ a.logo {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-links-link:hover,
-.social-links-link:focus {
+.social-links-link:hover, .social-links-link:focus {
   background-color: #2196f3;
-}
-
-.social-links-image {
-  fill: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links-link:hover .social-links-image,
@@ -308,6 +298,8 @@ a.logo {
 }
 
 .social-links-image {
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 20px;
   height: 20px;
 }
@@ -458,7 +450,6 @@ button:focus {
   border-style: none;
   border-radius: 5px;
   background-color: #2196f3;
-  cursor: pointer;
 }
 
 .moto-container h1 {
@@ -488,7 +479,7 @@ button:focus {
   font-weight: 700;
   letter-spacing: 0.03em;
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 
 .what-we-do-pictures-tittle {
@@ -571,6 +562,10 @@ button:focus {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.header-right-navigation:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header-icon {
   width: 20px;
   height: 16px;
@@ -589,11 +584,6 @@ button:focus {
   position: relative;
 }
 
-.main-menu li:not(:last-child),
-.header-right-navigation:not(:last-child) {
-  margin-right: 50px;
-}
-
 .main-menu a {
   font-size: 14px;
   font-weight: 400;
@@ -602,11 +592,13 @@ button:focus {
   transition-delay: 250ms;
 }
 
+.main-menu li:not(:last-child) {
+  margin-right: 50px;
+}
+
 .moto-section {
   background-color: #2f303a;
-  background-image: url("../images/img_overlay.png"),
-    url("../images/main_image.jpg"), url("../images/img_bg.jpg"),
-    linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: url("../images/img_overlay.png"), url("../images/main_image.jpg"), url("../images/img_bg.jpg"), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -636,7 +628,7 @@ button:focus {
   list-style: none;
 }
 
-.preferences-container li {
+.preferences-container ul li {
   width: 270px;
   font-size: 14px;
   color: #757575;
@@ -645,7 +637,7 @@ button:focus {
   text-align: left;
 }
 
-.preferences-container li:not(:last-child) {
+.preferences-container ul li:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -677,6 +669,10 @@ button:focus {
   width: 100%;
 }
 
+.what-we-do-pictures li:not(:last-child) {
+  margin-right: 30px;
+}
+
 .what-we-do-pictures li {
   position: relative;
 }
@@ -688,12 +684,12 @@ button:focus {
   padding: 94px 0;
 }
 
-.our-team-container ul {
+.our-team ul {
   list-style: none;
   display: flex;
 }
 
-.our-team-container li {
+.our-team li {
   text-align: center;
   outline-color: #eeeeee;
   outline-style: solid;
@@ -703,7 +699,7 @@ button:focus {
   border-radius: 3px;
 }
 
-.our-team-container li:not(:last-child) {
+.our-team li:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -749,11 +745,6 @@ button:focus {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-labels-link:hover .customers-labels-link-image,
-.customers-labels-link:focus .customers-labels-link-image {
-  fill: #2196f3;
-}
-
 .customers-labels-link {
   width: 170px;
   height: 90px;
@@ -767,6 +758,11 @@ button:focus {
 .customers-labels-link-image {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customers-labels-link:hover .customers-labels-link-image,
+.customers-labels-link:focus .customers-labels-link-image {
+  fill: #2196f3;
 }
 
 .regular-customers li:hover,
@@ -791,15 +787,7 @@ button:focus {
   padding-bottom: 76px;
 }
 
-.pictures li:nth-child(3n) {
-  margin-right: 0;
-}
-
-.pictures li:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
-
-.pictures li {
+.pictures ul li {
   width: 370px;
   list-style: none;
   border-style: solid;
@@ -811,24 +799,31 @@ button:focus {
   justify-content: center;
 }
 
-.pictures a {
+.pictures ul a {
   display: block;
 }
 
-.pictures a:focus,
-.pictures a:hover {
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+.pictures ul li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.pictures ul li:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.pictures ul h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+}
+
+.pictures ul a:focus,
+.pictures ul a:hover {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06);
 }
 
 .pictures-title {
   padding: 20px;
-}
-
-.pictures h3 {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 2;
 }
 
 .pictures-title p {
@@ -836,6 +831,12 @@ button:focus {
   font-size: 16px;
   line-height: 1.88;
   margin: 0;
+}
+
+.footer {
+  padding: 50px 0;
+  background-color: #2f303a;
+  width: 100%;
 }
 
 .footer .container > div {
@@ -847,12 +848,6 @@ button:focus {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-}
-
-.footer {
-  padding: 50px 0;
-  background-color: #2f303a;
-  width: 100%;
 }
 
 .footer-container ul a {
@@ -888,17 +883,6 @@ button:focus {
   align-items: center;
 }
 
-.footer-form-input {
-  width: 358px;
-  height: 50px;
-  background: transparent;
-  padding: 15px;
-  display: block;
-  border: 1px solid rgba(117, 117, 117, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
 .footer-form p {
   color: #ffffff;
   font-weight: 700px;
@@ -912,6 +896,17 @@ button:focus {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.footer-form-input {
+  width: 358px;
+  height: 50px;
+  background: transparent;
+  padding: 15px;
+  display: block;
+  border: 1px solid rgba(117, 117, 117, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .footer-form-input-image {
