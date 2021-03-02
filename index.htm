@@ -29,8 +29,11 @@
                         </li>
                     </ul>
                 </nav>
+                <button type= "button" class="burger-btn" data-menu-button>
+                    <svg class="burger-icon"> <use href=./images/sprite_logo.svg#burger-menu> </svg>
+                </button>
                 <address class="header-address">
-                    <a class="header-right-navigation " href="mailto:info@devstudio.com"> 
+                    <a class="header-right-navigation" href="mailto:info@devstudio.com"> 
                         <svg class="header-icon">
                             <use href="./images/sprite_social_links.svg#icon-envelope"></use>
                         </svg> info@devstudio.com
@@ -42,7 +45,23 @@
                     </a>
                 </address>
             </div>
+            <div class="mobile-menu list" data-menu>
+                <button type= "button" class="mobile-close-button" data-menu-close>
+                    <svg class="modal-close-button-icon">
+                        <use href="./images/sprite_logo.svg#icon-close-black">
+                            <use>
+                    </svg>
+                </button>
+
+                <ul class="mobile-menu-nav">
+                    <li class="mobile-menu-nav-item"><a href="#" class="mobile-menu-nav-link link">Студия</a></li>
+                    <li class="mobile-menu-nav-item"><a href="#" class="mobile-menu-nav-link link">Портфолио</a></li>
+                    <li class="mobile-menu-nav-item"><a href="#" class="mobile-menu-nav-link link">Контакты</a></li>
+                </ul>
+            </div>
         </header>
+
+
         <main>
             <section class="moto-section">
                 <div class="moto-container">
@@ -85,7 +104,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="what-we-do">
+            <!-- <section class="what-we-do">
                 <div class="what-we-do-container container">
                     <h2>Чем мы занимаемся</h2>
                     <ul class="what-we-do-pictures">
@@ -103,12 +122,14 @@
                         </li>
                     </ul>
                 </div>
-            </section>
+            </section> -->
             <section class="our-team">
                 <div class="our-team-container container">
                 <h2>Наша команда</h2>
                     <ul>
-                        <li><img src="./images/img1.jpg" alt="Игорь Демьяненко" width="270"/>
+                        <li><img 
+                            srcset="./images/mobile/member1-mob.jpg 1x, ./images/mobile/member1-mob@2x.jpg 2x" 
+                            alt="Игорь Демьяненко">
                             <div class="our-team-img-tittle">
                                 <h3>Игорь Демьяненко</h3>
                                 <p lang="en">Product Designer</p>
@@ -136,7 +157,9 @@
                                 </a>
                             </div>
                         </li>
-                        <li><img src="./images/img2.jpg" alt="Ольга Репина" width="270"/>
+                        <li><img 
+                            srcset="./images/mobile/member2-mob.jpg 1x, ./images/mobile/member2-mob@2x.jpg 2x"  
+                            alt="Ольга Репина">
                             <div class="our-team-img-tittle">
                                 <h3>Ольга Репина</h3>
                                 <p lang="en">Frontend Developer</p>
@@ -164,7 +187,9 @@
                                 </a>
                             </div>
                         </li>
-                        <li><img src="./images/img3.jpg" alt="Николай Тарасов" width="270"/>
+                        <li><img 
+                            srcset="./images/mobile/member3-mob.jpg 1x, ./images/mobile/member3-mob@2x.jpg 2x" 
+                            alt="Николай Тарасов">
                             <div class="our-team-img-tittle">
                                 <h3>Николай Тарасов</h3>
                                 <p lang="en">Marketing</p>
@@ -193,7 +218,9 @@
                             </div>
                         </li>
                         <li>
-                            <img src="./images/img4.jpg" alt="Михаил Ермаков" width="270"/>
+                            <img 
+                            srcset="./images/mobile/member4-mob.jpg 1x, ./images/mobile/member4-mob@2x.jpg 2x" 
+                            alt="Михаил Ермаков">
                             <div class="our-team-img-tittle">
                                 <h3>Михаил Ермаков</h3>
                                 <p lang="en">UI Designer</p>
@@ -224,7 +251,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="regular-customers">
+            <!-- <section class="regular-customers">
                 <div class="container">
                     <h2>Постоянные клиенты</h2>
                     <ul class="customers-labels">
@@ -272,9 +299,9 @@
                         </li>
                     </ul>
                 </div>
-            </section>
+            </section> -->
         </main>
-        <footer class="footer">
+        <!-- <footer class="footer">
             <div class="container">
                 <div class="footer-container">
                     <a href="" class="logo"> <span>Web</span>Studio</a>
@@ -380,7 +407,8 @@
                     <button type="submit" class="modal-form-button">отправить</button>
                 </form>
             </div>
-        </div>
+        </div> -->
         <script src="./js/modal.js"></script>
+        <script scr="./js/mobile-menu.js"></script>
     </body>
 </html>
