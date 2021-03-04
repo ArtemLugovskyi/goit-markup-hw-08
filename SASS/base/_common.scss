@@ -3,6 +3,9 @@ body {
   font-family: "Roboto", sans-serif;
   color: #212121;
 }
+* {
+  outline: none;
+}
 a {
   text-decoration: none;
   color: #000000;
@@ -24,6 +27,8 @@ ul {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .list {
   list-style: none;
