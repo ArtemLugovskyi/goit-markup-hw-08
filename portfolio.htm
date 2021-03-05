@@ -2,6 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
             integrity="sha512-Zx6MlUMKSVJoQ+83OwhdILe8cSEsCzfqThJd7J/VA2UrK6Ctj85p+xzqfyuNXE5B1k25uUdmJ2OzItbBy9GHAQ=="
             crossorigin="anonymous" />
@@ -15,6 +16,52 @@
     <body>
         <header class="header">
             <div class="header-container container">
+                <nav class="header-left-navigation">
+                    <a href="" class="logo"><span>Web</span>Studio</a>
+                    <ul class="main-menu">
+                        <li><a href="./index.htm" class="main-menu-title current"><b>Студия</b></a>
+                            <div class="layer"></div>
+                        </li>
+                        <li><a href="./portfolio.htm" class="main-menu-title"><b>Портфолио</b></a>
+                            <div class="layer"></div>
+                        </li>
+                        <li><a href="#" class="main-menu-title"><b>Контакты</b></a>
+                            <div class="layer"></div>
+                        </li>
+                    </ul>
+                </nav>
+                <button type="button" class="burger-btn" data-menu-button>
+                    <svg class="burger-icon">
+                        <use href="./images/sprite_logo.svg#burger-menu"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="mobile-menu list" data-menu>
+                <button type="button" class="mobile-close-button" data-menu-close>
+                    <svg class="modal-close-button-icon">
+                        <use href="./images/sprite_logo.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu-nav">
+                    <li class="mobile-menu-nav-item"><a href="./index.htm" class="mobile-menu-nav-link  link">Студия</a></li>
+                    <li class="mobile-menu-nav-item"><a href="./portfolio.htm" class="mobile-menu-nav-link current link">Портфолио</a></li>
+                    <li class="mobile-menu-nav-item"><a href="#" class="mobile-menu-nav-link link">Контакты</a></li>
+                </ul>
+                <address class="header-address">
+                    <a class="header-right-navigation phone" href="tel:+380961111111"> +38 096 111 11 11
+                    </a>
+                    <a class="header-right-navigation" href="mailto:info@devstudio.com"> info@devstudio.com
+                    </a>
+                </address>
+                <ul class="mobile-menu-social">
+                    <li class=""><a href="#" class="mobile-menu-social-link link">Instagram</a></li>
+                    <li class=""><a href="#" class="mobile-menu-social-link link">Twitter</a></li>
+                    <li class=""><a href="#" class="mobile-menu-social-link link">Facebook</a></li>
+                    <li class=""><a href="#" class="mobile-menu-social-link link">LinkedIn</a></li>
+                </ul>
+            </div>
+        </header>
+            <!-- <div class="header-container container">
                 <nav class="header-left-navigation">
                     <a href="" class="logo"><span>Web</span>Studio</a>
                     <ul class="main-menu">
@@ -35,7 +82,7 @@
                         </svg> +38 096 111 11 11
                     </a>
                 </address>
-            </div>
+            </div> -->
         </header>
         <main>
             <section class="portfolio">
@@ -51,16 +98,32 @@
                     </nav>
                     <div class="pictures">
                         <ul>
-                            <li><a href=""class="pictures-link">
-                                    <div class="pictures-wrapper"> 
-                                        <img src="./images/technokriak.png" alt="лептоп" width="370" height="294"/>
+                            <li>
+                                <a>
+                                 
+                                    <picture>
+                                        <source srcset="./images/desktop/technokriak.webp 1x, ./images/mobile/technokriak@2x.webp 2x"
+                                            media="(min-width: 1200px)" type="image/webp">
+                                        <source srcset="./images/desktop/technokriak.png 1x, ./images/mobile/technokriak@2x.png 2x"
+                                            media="(min-width: 1200px)">
+                                        <source srcset="./images/tablet/technokriak-tab.webp 1x, ./images/tablet/technokriak-tab@2x.webp 2x"
+                                            media="(min-width: 768px)" type="image/webp">
+                                        <source srcset="./images/tablet/technokriak-tab.png 1x, ./images/tablet/technokriak-tab@2x.png 2x"
+                                            media="(min-width: 768px)">
+                                        <source srcset="./images/mobile/technokriak-mob.webp1x, ./images/mobile/technokriak-mob@2x.webp 2x"
+                                            media="(min-width: 480px)" type="image/webp">
+                                        <source srcset="./images/mobile/technokriak-mob.png 1x, ./images/mobile/technokriak-mob@2x.png 2x"
+                                            media="(min-width: 480px)">
+                                         <img src="./images/technokriak-mob.png" alt="лептоп" />
+                                    </picture>
+                                    <div class="pictures-wrapper">
                                         <p class="pictures-overlay opacity-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                         шпионажа и атак на защищённые сервера конкурентов.</p>
-                                    </div>
-                                    <div class="pictures-title">
-                                        <h3><b>Технокряк</b></h3>
-                                        <p>Веб-сайт</p>
-                                    </div>
+                                </div>
+                                <div class="pictures-title">
+                                    <h3><b>Технокряк</b></h3>
+                                    <p>Веб-сайт</p>
+                                </div>
                                 </a>
                             </li>
                             <li><a href="" class="pictures-link">
@@ -180,40 +243,105 @@
                         </ul>
                     </address>
                 </div>
-                <div class="social-links-footer ">
+                <div class="social-footer ">
                     <h2>присоеденяйтесь</h2>
                     <ul>
                         <li>
-                            <a class="social-links-link social-links-link-footer " href="#">
-                                <svg class="social-links-image">
-                                    <use href="./images/sprite_social_links.svg#icon-instagram"></use>
+                            <a class=" image" href="#">
+                                <svg>
+                                    <use href="./images/sprite_mobile.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a class="social-links-link social-links-link-footer" href="#">
-                                <svg class="social-links-image">
-                                    <use href="./images/sprite_social_links.svg#icon-twitter"></use>
+                            <a class=" image" href="#">
+                                <svg>
+                                    <use href="./images/sprite_mobile.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a class="social-links-link social-links-link-footer" href="#">
-                                <svg class="social-links-image">
-                                    <use href="./images/sprite_social_links.svg#icon-facebook"></use>
+                            <a class=" image" href="#">
+                                <svg>
+                                    <use href="./images/sprite_mobile.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a class="social-links-link social-links-link-footer" href="#">
-                                <svg class="social-links-image">
-                                    <use href="./images/sprite_social_links.svg#icon-linkedin"></use>
+                            <a class=" image" href="#">
+                                <svg>
+                                    <use href="./images/sprite_mobile.svg#icon-linkedin"></use>
                                 </svg>
                             </a>
                         </li>
                     </ul>
                 </div>
+                <div class="footer-form">
+                    <p> Подпишитесь на рассылку</p>
+                    <form class="footer-form-mail">
+                        <input type="email" name="email" class="footer-form-input" placeholder="E-mail">
+                        <button type="submit" class="footer-form-button"><span>Подписаться</span>
+                            <svg class="footer-form-input-image">
+                                <use href="./images/sprite_logo.svg#send"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+        
             </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="modal-close-button" data-modal-close>
+                    <svg class="modal-close-button-icon">
+                        <use href="./images/sprite_logo.svg#icon-close-black">
+                            <use>
+                    </svg>
+                </button>
+                <form action="#" class="modal-form">
+                    <p>Оставте свои данные, мы вам перезвоним </p>
+                    <label class="modal-form-input-label">
+                        <h3>Имя</h3>
+                        <span class="modal-form-input-wrapper">
+                            <input type="text" name="user-name" class="modal-form-input">
+                            <svg class="modal-form-input-image">
+                                <use href="./images/sprite_logo.svg#icon-user"></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <label class="modal-form-input-label">
+                        <h3>Телефон</h3>
+                        <span class="modal-form-input-wrapper">
+                            <input type="tel" name="user-phone" class="modal-form-input">
+                            <svg class="modal-form-input-image">
+                                <use href="./images/sprite_logo.svg#icon-phone"></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <label class="modal-form-input-label">
+                        <h3>Почта</h3>
+                        <span class="modal-form-input-wrapper">
+                            <input type="email" name="user-mail" class="modal-form-input">
+                            <svg class="modal-form-input-image">
+                                <use href="./images/sprite_logo.svg#icon-envelope"></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <label class="modal-form-input-label">
+                        <h3>Коментарий</h3>
+                        <textarea name="text-box" class="modal-form-input-message" placeholder="Введите текст"></textarea>
+                    </label>
+                    <input type="checkbox" name="user-policy" id="policy-cheked"
+                        class="modal-form-checkbox-policy visually-hidden">
+                    <label for="policy-cheked" class="modal-form-label-policy">Соглашаюсь с рассылкой и принимаю <a
+                            href="#">Условия договора</a>
+        
+                    </label>
+                    <button type="submit" class="modal-form-button">отправить</button>
+                </form>
+            </div>
+        </div>
+        </footer>
+        <script src="/js/mobile-menu.js"></script>
     </body>
 </html>
