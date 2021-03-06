@@ -1,8 +1,8 @@
-.main-menu {
+.main-menu,
+.header-address {
   display: none;
 }
-
-.header-address {
+.mobile-header-address {
   display: flex;
   align-items: left;
   padding-left: 40px;
@@ -59,6 +59,7 @@
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    height: 80px;
   }
   .mobile-menu,
   .burger-btn {
@@ -74,13 +75,12 @@
       background-color: #2196f3;
       background-size: contain;
       background-position: bottom;
-      margin-top: 35px;
+      margin-top: 30px;
       border-radius: 15%;
       display: block;
       position: absolute;
     }
   }
-
   .header-address {
     align-items: center;
     font-style: normal;
@@ -104,6 +104,7 @@
     fill: currentColor;
     vertical-align: middle;
   }
+  .header-left-navigation,
   .main-menu {
     display: flex;
     list-style: none;

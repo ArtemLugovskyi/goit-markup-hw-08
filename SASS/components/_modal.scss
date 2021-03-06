@@ -36,7 +36,7 @@
 .mobile-menu-nav-item:not(:last-child) {
   margin-bottom: 40px;
 }
-.header-address {
+.mobile-header-address {
   color: #757575;
   font-style: normal;
   display: flex;
@@ -49,18 +49,6 @@
 }
 .mobile-menu-nav-item a {
   position: relative;
-
-  &.mobile-menu-social-link::after {
-    content: "-";
-    width: 22px;
-    height: 1px;
-    background-color: #212121;
-    background-size: contain;
-    background-position: bottom;
-    margin-left: 10px;
-    display: block;
-    position: absolute;
-  }
 }
 .mobile-menu-social {
   flex-direction: row;
