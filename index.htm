@@ -32,9 +32,15 @@
                 </nav>
                 <div class="header-address">
             <address >
-                <a class="header-right-navigation phone" href="tel:+380961111111"> +38 096 111 11 11
+                <a class="header-right-navigation phone" href="tel:+380961111111"> 
+                    <svg class="header-icon">
+                        <use href="./images/sprite_mobile.svg#icon-smartphone"></use>
+                    </svg> +38 096 111 11 11
                 </a>
-                <a class="header-right-navigation" href="mailto:info@devstudio.com"> info@devstudio.com
+                <a class="header-right-navigation" href="mailto:info@devstudio.com">
+                    <svg class="header-icon">
+                        <use href="./images/sprite_mobile.svg#icon-envelope"></use>
+                    </svg> info@devstudio.com
                 </a>
             </address>
             </div>
@@ -117,17 +123,45 @@
                 <div class="what-we-do-container container">
                     <h2>Чем мы занимаемся</h2>
                     <ul class="what-we-do-pictures">
-                        <li><img src="./images/box1.png" alt="frontend" width="370"/>
+
+                        <li>
+                            <picture>
+                                    <source
+                                        srcset="./images/desktop/desktop-apps.webp 1x, ./images/desktop/desktop-apps@2x.webp 2x"
+                                        media="(min-width: 1200px)" type="image/webp">
+                                    <source
+                                        srcset="./images/desktop/desktop-apps.jpg 1x, ./images/desktop/desktop-apps@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <img class="what-we-do-list-img" src="./images/desktop/desktop-apps.jpg"
+                                        alt="Десктопные приложения">
+                            </picture>
                             <div class="what-we-do-pictures-tittle">
-                            <h3>Десктопные приложения</h3>
+                                <h3>Десктопные приложения</h3>
+                            </div>
                         </li>
-                        <li><img src="./images/box2.png" alt="backend" width="370"/>
+                        <li>
+                            <picture>
+                                <source srcset="./images/desktop/mobile-apps.webp 1x, ./images/desktop/mobile-apps@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source srcset="./images/desktop/mobile-apps.jpg 1x, ./images/desktop/mobile-apps@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <img class="what-we-do-list-img" src="./images/desktop/mobile-apps.jpg" alt="Мобильные приложения">
+                            </picture>
                             <div class="what-we-do-pictures-tittle">
-                            <h3>Мобильные приложения</h3>
+                                <h3>Мобильные приложения</h3>
+                            </div>
                         </li>
-                        <li><img src="./images/box3.png" alt="design" width="370"/>
-                            <div class="what-we-do-pictures-tittle">
-                            <h3>Дизайнерские решения</h3>
+                        <li>
+                            <picture>
+                                <source srcset="./images/desktop/designer.webp 1x, ./images/desktop/designer@2x.webp 2x"
+                                    media="(min-width: 1200px)"type="image/webp">
+                                <source srcset="./images/desktop/designer.jpg 1x, ./images/desktop/designer@2x.jpg 2x" 
+                                    media="(min-width: 1200px)">
+                                <img class="what-we-do-list-img" src="./images/desktop/designer.jpg" alt="Дизайнерские решения">
+                            </picture>
+                            <div class="what-we-do-list-img">
+                                <h3>Дизайнерские решения</h3>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -188,7 +222,7 @@
                             <picture>
                                 <source srcset="./images/desktop/member2.webp 1x, ./images/desktop/member2@2x.webp 2x"
                                     media="(min-width: 1200px)" type="image/webp">
-                                <source srcset="./images/desktop/member2.jpg 1x, ./images/desktop/member2@2x.jpg 2x" media="(min-width: 2200px)">
+                                <source srcset="./images/desktop/member2.jpg 1x, ./images/desktop/member2@2x.jpg 2x" media="(min-width: 1200px)">
                                 <source srcset="./images/tablet/member2-tab.webp 2x, ./images/tablet/member2-tab@2x.webp 2x"
                                     media="(min-width: 768px)" type="image/webp">
                                 <source srcset="./images/tablet/member2-tab.jpg 2x, ./images/tablet/member2-tab@2x.jpg 2x"
@@ -232,7 +266,7 @@
                                 media="(min-width: 1200px)"
                                     type="image/webp">
                                 <source srcset="./images/desktop/member3.jpg 1x, ./images/desktop/member3@2x.jpg 2x"
-                                media="(min-width: 2200px)">
+                                media="(min-width: 1200px)">
                                 <source srcset="./images/tablet/member3-tab.webp 2x, ./images/tablet/member3-tab@2x.webp 2x"
                                     media="(min-width: 768px)" type="image/webp">
                                 <source srcset="./images/tablet/member3-tab.jpg 2x, ./images/tablet/member3-tab@2x.jpg 2x"
@@ -272,9 +306,10 @@
                         </li>
                         <li>
                             <picture>
-                                <source srcset="./images/desktop/member4.webp 1x, ./images/desktop/member4@2x.webp 2x" media="(min-width: 1200px)"
-                                    type="image/webp">
-                                <source srcset="./images/desktop/member4.jpg 1x, ./images/desktop/member4@2x.jpg 2x" media="(min-width: 2200px)">
+                                <source srcset="./images/desktop/member4.webp 1x, ./images/desktop/member4@2x.webp 2x" 
+                                    media="(min-width: 1200px)"type="image/webp">
+                                <source srcset="./images/desktop/member4.jpg 1x, ./images/desktop/member4@2x.jpg 2x" 
+                                    media="(min-width: 1200px)">
                                 <source srcset="./images/tablet/member4-tab.webp 2x, ./images/tablet/member4-tab@2x.webp 2x"
                                     media="(min-width: 768px)" type="image/webp">
                                 <source srcset="./images/tablet/member4-tab.jpg 2x, ./images/tablet/member4-tab@2x.jpg 2x"

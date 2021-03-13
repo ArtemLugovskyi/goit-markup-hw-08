@@ -62,8 +62,10 @@
     line-height: 1.22;
   }
 }
-.header-icon {
-  display: none;
+@media screen and (max-width: 767px) {
+  .header-icon {
+    display: none;
+  }
 }
 .backdrop {
   position: fixed;
@@ -73,6 +75,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   transition: all 250ms linear;
+  overflow: auto;
 
   &.is-hidden {
     opacity: 0;
@@ -87,6 +90,7 @@
   transform: translate(-50%, -50%);
   width: 450px;
   height: 609px;
+  max-width: calc(100vw - 30px);
   background-color: #ffffff;
   border-radius: 1px;
   padding: 40px;
@@ -101,8 +105,8 @@
     outline: none;
     cursor: pointer;
     position: absolute;
-    bottom: 93%;
-    left: 93%;
+    top: 2%;
+    right: 2%;
   }
 }
 

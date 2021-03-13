@@ -1,5 +1,5 @@
 .moto-container h1 {
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.364;
   letter-spacing: 0.06em;
   font-weight: 800;
@@ -58,4 +58,11 @@
   font-weight: 700;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .moto-container h1 {
+    font-size: 44px;
+  }
 }
