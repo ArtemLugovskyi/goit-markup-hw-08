@@ -59,10 +59,23 @@
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-  screen and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .moto-container h1 {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .moto-container h1 {
     font-size: 44px;
+  }
+   .pictures-title {
+    padding: 20px;
+
+    & p {
+      color: #757575;
+      font-size: 16px;
+      line-height: 1.88;
+      margin: 0;
+    }
   }
 }

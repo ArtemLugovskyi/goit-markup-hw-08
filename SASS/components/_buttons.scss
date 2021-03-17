@@ -10,8 +10,6 @@
   top: 10px;
   right: 10px;
 }
-.modal-close-button {
-}
 
 .burger-icon {
   width: 24px;
@@ -53,24 +51,8 @@
   outline: none;
 }
 
-// .moto-container .button {
-//   display: inline-block;
-//   align-content: space-around;
-//   width: 200px;
-//   height: 50px;
-//   color: #e5e5e5;
-//   background-color: #2196f3;
-//   font-size: 16px;
-//   font-weight: 700;
-//   line-height: 1.875;
-//   letter-spacing: 0.06em;
-//   border-radius: 5px;
-//   border: none;
-//   outline: none;
-// }
 .buttons {
   display: flex;
-  // justify-items: center;
 
   & ul {
     flex-wrap: wrap;
@@ -104,18 +86,15 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
+  
   .burger-btn,
   .mobile-close-button {
     display: none;
   }
+  .buttons ul {
+    justify-content: center;
+  }
 }
-
-// .buttons {
-//   display: flex;
-//   justify-items: center;
 
 //   & ul {
 //     margin: auto;
