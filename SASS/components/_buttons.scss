@@ -86,7 +86,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  
   .burger-btn,
   .mobile-close-button {
     display: none;
@@ -147,4 +146,9 @@ button:focus {
   border-style: none;
   border-radius: 5px;
   background-color: #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form-button {
+    margin-left: 12px;
+  }
 }

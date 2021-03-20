@@ -11,6 +11,7 @@
 
   transform: translateX(-50%) translateY(-100%);
   transition: transform 500ms linear;
+  z-index: 1000;
 }
 .mobile-menu.is-open {
   transform: translateX(-50%) translateY(0%);
@@ -229,7 +230,7 @@
   }
 
   .modal-form-checkbox-policy:checked + &::before {
-    background-image: url("../images/icon_check.png");
+    background-image: url("./images/desktop/icon_check.png");
     background-repeat: no-repeat;
     outline: none;
     border: none;
