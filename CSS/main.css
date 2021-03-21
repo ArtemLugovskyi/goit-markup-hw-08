@@ -349,31 +349,21 @@ a.logo {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-form-label-policy::before {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border: 1px;
-  border-radius: 2px;
-  border: 1px solid #000;
-  left: 0px;
-  top: 0px;
-  position: absolute;
-}
-
-.modal-form-checkbox-policy:checked + .modal-form-label-policy::before {
-  background-image: url("./images/desktop/icon_check.png");
-  background-repeat: no-repeat;
-  outline: none;
-  border: none;
-}
-
 .modal-form-label-policy {
   font-size: 14px;
   letter-spacing: 0.03em;
   margin-top: 20px;
-  padding-left: 26px;
-  position: relative;
+}
+
+.modal-form-label-policy::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 1px;
+  border-radius: 2px;
+  border: 1px solid #000;
+  vertical-align: middle;
 }
 
 .modal-form-label-policy a {
@@ -383,6 +373,13 @@ a.logo {
 
 .modal-form-label-policy:hover {
   cursor: pointer;
+}
+
+.modal-form-checkbox-policy:checked + .modal-form-label-policy::before {
+  background-image: url("../images/desktop/icon_check.png");
+  background-repeat: no-repeat;
+  outline: none;
+  border: none;
 }
 
 .modal-form-button {
@@ -444,11 +441,11 @@ a.logo {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-team-container .social a:focus {
+.our-team-container .social a:focus, .our-team-container .social a:hover {
   background-color: #2196f3;
 }
 
-.our-team-container .social a:focus svg {
+.our-team-container .social a:focus svg, .our-team-container .social a:hover svg {
   fill: #ffffff;
 }
 
@@ -1180,7 +1177,7 @@ picture {
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .moto-section {
     background-color: #2f303a;
     background-image: url("/images/tablet/img-overlay-tab.png"), url("/images/tablet/header_img-tab.jpg"), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
@@ -1336,7 +1333,7 @@ picture {
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .moto-section {
     background-color: #2f303a;
     background-image: url("/images/desktop/overlay-desk.png"), url("/images/desktop/header-img.jpg"), url("/images/desktop/Bg.png"), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
@@ -1530,7 +1527,7 @@ picture {
 }
 
 .footer {
-  padding: 60px 15px;
+  padding: 60px 0;
   background-color: #2f303a;
   width: 100%;
 }
@@ -1546,7 +1543,6 @@ picture {
   display: flex;
   flex-direction: column;
   align-content: center;
-  padding: 0;
 }
 
 .footer-container {
