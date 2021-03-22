@@ -76,7 +76,10 @@
 .social-footer li {
   margin-right: 10px;
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
+  // border-radius: 50%;&:focus,
+  &:hover {
+    background-color: #2196f3;
+  }
 
   & .image svg {
     fill: #ffffff;

@@ -1,6 +1,6 @@
 :root {
   --primary-text-color: #212121;
-  --primary-background-color: #e5e5e5;
+  --primary-background-color: #f5f4fa;
 }
 
 .visually-hidden {
@@ -483,7 +483,10 @@ a.logo {
 .social-footer li {
   margin-right: 10px;
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
+}
+
+.social-footer li:hover {
+  background-color: #2196f3;
 }
 
 .social-footer li .image svg {
@@ -798,10 +801,8 @@ button:focus {
 }
 
 .header-container {
-  display: flex;
   width: 100%;
   height: 60px;
-  align-items: center;
 }
 
 .header-icon {
@@ -1121,6 +1122,7 @@ button:focus {
 
 picture {
   display: flex;
+  justify-content: center;
 }
 
 .portfolio {
@@ -1147,6 +1149,8 @@ picture {
 
 .pictures ul a {
   display: block;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .pictures ul h3 {
@@ -1194,7 +1198,6 @@ picture {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     flex-wrap: wrap;
   }
   .moto-container h1 {
@@ -1321,7 +1324,7 @@ picture {
     cursor: pointer;
   }
   .pictures ul {
-    padding-bottom: 60px;
+    padding-bottom: 64px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -1329,7 +1332,6 @@ picture {
   }
   .pictures ul li {
     width: calc(50% - 15px);
-    margin-bottom: 30px;
   }
 }
 
@@ -1354,7 +1356,6 @@ picture {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     flex-wrap: wrap;
   }
   .preferences {
@@ -1495,13 +1496,7 @@ picture {
   }
   .pictures ul li {
     width: calc((100% - 90px) / 3);
-    list-style: none;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #eeeeee;
     margin-left: 0;
-    display: flex;
-    justify-content: center;
   }
   .pictures ul a {
     display: block;
@@ -1638,13 +1633,9 @@ picture {
 @media screen and (min-width: 1200px) {
   .footer {
     padding: 50px 15px;
-    background-color: #2f303a;
-    width: 100%;
     height: 252px;
   }
   .footer .container > div {
-    flex-grow: 1;
-    flex-shrink: 1;
     margin: 0;
     align-items: flex-start;
     text-align: start;

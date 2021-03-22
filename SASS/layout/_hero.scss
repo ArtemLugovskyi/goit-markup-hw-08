@@ -180,6 +180,7 @@
 //portfolio
 picture {
   display: flex;
+  justify-content: center;
 }
 .portfolio {
   display: flex;
@@ -204,6 +205,8 @@ picture {
 
   & a {
     display: block;
+    flex-grow: 1;
+    flex-shrink: 1;
   }
 
   & h3 {
@@ -255,7 +258,6 @@ picture {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     flex-wrap: wrap;
     & h1 {
       width: 360px;
@@ -405,7 +407,7 @@ picture {
     cursor: pointer;
   }
   .pictures ul {
-    padding-bottom: 60px;
+    padding-bottom: 64px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -413,7 +415,7 @@ picture {
 
     & li {
       width: calc(50% - 15px);
-      margin-bottom: 30px;
+      // margin-bottom: 30px;
     }
   }
 }
@@ -443,7 +445,6 @@ picture {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     flex-wrap: wrap;
   }
 
@@ -602,13 +603,13 @@ picture {
     justify-content: space-between;
     & li {
       width: calc((100% - 90px) / 3);
-      list-style: none;
-      border-style: solid;
-      border-width: 1px;
-      border-color: #eeeeee;
+      // list-style: none;
+      // border-style: solid;
+      // border-width: 1px;
+      // border-color: #eeeeee;
       margin-left: 0;
-      display: flex;
-      justify-content: center;
+      // display: flex;
+      // justify-content: center;
     }
 
     & a {
