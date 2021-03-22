@@ -1,7 +1,7 @@
 .moto-section {
   background-color: #2f303a;
-  background-image: url("./images/mobile/img-overlay-mob.png"),
-    url("./images/mobile/header-img-mob.jpg"),
+  background-image: url("../images/mobile/img-overlay-mob.png"),
+    url("../images/mobile/header-img-mob.jpg"),
     linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   background-repeat: no-repeat;
   background-size: cover;
@@ -242,8 +242,8 @@ picture {
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .moto-section {
     background-color: #2f303a;
-    background-image: url("./images/tablet/img-overlay-tab.png"),
-      url("./images/tablet/header_img-tab.jpg"),
+    background-image: url("../images/tablet/img-overlay-tab.png"),
+      url("../images/tablet/header_img-tab.jpg"),
       linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     background-repeat: no-repeat;
     background-size: cover;
@@ -424,8 +424,8 @@ picture {
   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .moto-section {
     background-color: #2f303a;
-    background-image: url("./images/desktop/overlay-desk.png"),
-      url("./images/desktop/header-img.jpg"), url("./images/desktop/Bg.png"),
+    background-image: url("../images/desktop/overlay-desk.png"),
+      url("../images/desktop/header-img.jpg"), url("../images/desktop/Bg.png"),
       linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     background-repeat: no-repeat;
     background-repeat: no-repeat;
