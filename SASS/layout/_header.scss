@@ -88,7 +88,6 @@
       display: flex;
       flex-direction: column-reverse;
     }
-    // justify-content: flex-end;
   }
   .header-right-navigation {
     margin-bottom: 8px;
@@ -102,10 +101,6 @@
     font-weight: 700;
     color: #757575;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    // &:not(:last-child) {
-    //   margin-right: 50px;
-    // }
   }
   .header-icon {
     width: 20px;
