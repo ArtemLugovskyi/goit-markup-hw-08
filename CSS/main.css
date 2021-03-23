@@ -935,7 +935,7 @@ button:focus {
 
 .moto-section {
   background-color: #2f303a;
-  background-image: url("/images/mobile/img-overlay-mob.png"), url("/images/mobile/header-img-mob.jpg"), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: url("../images/mobile/img-overlay-mob.png"), url("../images/mobile/header-img-mob.jpg"), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -1183,22 +1183,11 @@ picture {
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .moto-section {
-    background-color: #2f303a;
     background-image: url("/images/tablet/img-overlay-tab.png"), url("/images/tablet/header_img-tab.jpg"), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
     height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   .moto-container {
     width: 360px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
   }
   .moto-container h1 {
     width: 360px;
@@ -1210,18 +1199,8 @@ picture {
     padding-top: 45px;
     margin: 0;
   }
-  .preferences-container ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-  }
   .preferences-container ul li {
     width: calc(50% - 15px);
-    font-size: 14px;
-    color: #757575;
-    line-height: 1.714;
-    font-weight: 400;
-    text-align: left;
   }
   .preferences-image-box {
     height: 120px;
@@ -1236,8 +1215,6 @@ picture {
     height: 70px;
   }
   .our-team {
-    background-color: #f5f4fa;
-    width: 100%;
     align-items: center;
   }
   .our-team ul {
@@ -1337,26 +1314,15 @@ picture {
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .moto-section {
-    background-color: #2f303a;
     background-image: url("/images/desktop/overlay-desk.png"), url("/images/desktop/header-img.jpg"), url("/images/desktop/Bg.png"), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
-    background-repeat: no-repeat;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
     height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .moto-container {
     width: 696px;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
   }
   .preferences {
     padding-top: 94px;
@@ -1413,8 +1379,6 @@ picture {
     position: relative;
   }
   .our-team {
-    background-color: #f5f4fa;
-    width: 100%;
     align-items: center;
     padding: 94px 0;
   }
