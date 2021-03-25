@@ -696,7 +696,7 @@ button:focus {
   padding-bottom: 50px;
 }
 
-.what-we-do-pictures-tittle {
+.what-we-do-pictures-title {
   width: 100%;
   height: 70px;
   color: #ffffff;
@@ -704,13 +704,16 @@ button:focus {
   opacity: 80%;
   display: inline-block;
   text-align: center;
-  text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  font-weight: 700;
   padding-top: 27px;
   position: absolute;
   bottom: 0;
+}
+
+.what-we-do-pictures-title h3 {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .our-team-container h2 {
@@ -1188,7 +1191,7 @@ picture {
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .moto-section {
-    background-image: url("../images/tablet/img-overlay-tab.png"), url("../images/tablet/header_img-tab.jpg"), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: url("../images/tablet/img-overlay-tab.png"), url("../images/tablet/header-img-tab.jpg"), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     height: 400px;
   }
   .moto-container {
@@ -1618,9 +1621,6 @@ picture {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-  }
-  .footer .footer-container {
-    padding-left: 60px;
   }
   .footer .social-footer {
     padding-right: 74px;
