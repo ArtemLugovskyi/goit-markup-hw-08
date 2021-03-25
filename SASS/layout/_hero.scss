@@ -239,7 +239,7 @@ picture {
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .moto-section {
     background-image: url("../images/tablet/img-overlay-tab.png"),
-      url("../images/tablet/header_img-tab.jpg"),
+      url("../images/tablet/header-img-tab.jpg"),
       linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     height: 400px;
   }
