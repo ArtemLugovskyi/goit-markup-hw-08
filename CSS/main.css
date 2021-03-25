@@ -688,7 +688,7 @@ button:focus {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.03em;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   color: #212121;
   margin-top: 30px;
@@ -722,10 +722,10 @@ button:focus {
 
 .our-team-container h2 {
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .regular-customers h2 {
@@ -739,6 +739,9 @@ button:focus {
 @media screen and (min-width: 768px) {
   .moto-container h1 {
     font-size: 26px;
+  }
+  .preferences-container h2 {
+    text-align: left;
   }
 }
 
@@ -754,6 +757,13 @@ button:focus {
     font-size: 16px;
     line-height: 1.88;
     margin: 0;
+  }
+  .preferences-container h2 {
+    text-align: left;
+  }
+  .our-team-container h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
@@ -901,7 +911,7 @@ button:focus {
 
 @media screen and (min-width: 1200px) {
   .header-container {
-    margin: 0 auto;
+    margin: 0;
   }
   .header-address {
     align-items: center;
@@ -927,6 +937,12 @@ button:focus {
     color: #757575;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-bottom: 0;
+  }
+  .header-left-navigation {
+    flex-grow: 1;
+  }
+  .header-left-navigation .logo {
+    margin-left: 215px;
   }
   .phone {
     margin-left: 30px;
@@ -972,10 +988,6 @@ button:focus {
   line-height: 1.714;
   font-weight: 400;
   text-align: left;
-}
-
-.preferences-container ul li h2 {
-  text-align: center;
 }
 
 .preferences-container ul li:not(:last-child) {
@@ -1238,17 +1250,12 @@ picture {
     justify-items: center;
     padding: 30px;
   }
-  .our-team-container h2 {
-    font-size: 28px;
-    font-weight: 700px;
-    letter-spacing: 0.03em;
-  }
-  .our-team-container h3 {
+  .our-team-img-tittle h3 {
     font-size: 16px;
     font-weight: 400px;
     letter-spacing: 0.03em;
   }
-  .our-team-container p {
+  .our-team-img-tittle p {
     color: #757575;
     letter-spacing: 0.03em;
     margin-top: 16px;
@@ -1324,6 +1331,12 @@ picture {
     width: 696px;
     flex-direction: column;
   }
+  .moto-container h1 {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+  }
   .preferences {
     padding-top: 94px;
   }
@@ -1336,7 +1349,7 @@ picture {
     margin: 0;
   }
   .preferences-container ul li {
-    width: calc((100% / 4) - 30px);
+    width: 270px;
     font-size: 14px;
     color: #757575;
     line-height: 1.714;
@@ -1501,7 +1514,11 @@ picture {
 .footer .container {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  justify-content: flex-start;
+}
+
+.footer .container .social-footer {
+  align-self: center;
 }
 
 .footer-container {
@@ -1569,7 +1586,7 @@ picture {
 }
 
 .footer-form-input {
-  width: 100%;
+  width: 450px;
   height: 50px;
   background: transparent;
   padding: 15px;
@@ -1592,6 +1609,20 @@ picture {
   font-size: 16px;
   line-height: 0.8;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 60px 15px;
+    height: 463px;
+  }
+  .footer .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .footer .footer-form {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

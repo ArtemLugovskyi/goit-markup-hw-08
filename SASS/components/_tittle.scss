@@ -12,7 +12,7 @@
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.03em;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   color: #212121;
   margin-top: 30px;
@@ -46,10 +46,10 @@
 
 .our-team-container h2 {
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .regular-customers h2 {
@@ -63,12 +63,15 @@
   .moto-container h1 {
     font-size: 26px;
   }
+  .preferences-container h2 {
+    text-align: left;
+  }
 }
 @media screen and (min-width: 1200px) {
   .moto-container h1 {
     font-size: 44px;
   }
-   .pictures-title {
+  .pictures-title {
     padding: 20px;
 
     & p {
@@ -77,5 +80,12 @@
       line-height: 1.88;
       margin: 0;
     }
+  }
+  .preferences-container h2 {
+    text-align: left;
+  }
+  .our-team-container h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
   }
 }

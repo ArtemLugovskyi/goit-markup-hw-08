@@ -37,9 +37,6 @@
       line-height: 1.714;
       font-weight: 400;
       text-align: left;
-      & h2 {
-        text-align: center;
-      }
     }
     & li:not(:last-child) {
       margin-bottom: 30px;
@@ -304,14 +301,6 @@ picture {
   .our-team-img-tittle {
     justify-items: center;
     padding: 30px;
-  }
-
-  .our-team-container {
-    & h2 {
-      font-size: 28px;
-      font-weight: 700px;
-      letter-spacing: 0.03em;
-    }
 
     & h3 {
       font-size: 16px;
@@ -409,6 +398,13 @@ picture {
   .moto-container {
     width: 696px;
     flex-direction: column;
+
+    & h1 {
+      width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
+      letter-spacing: 0.06em;
+    }
   }
 
   .preferences {
@@ -423,7 +419,8 @@ picture {
     margin: 0;
 
     & li {
-      width: calc((100% / 4) - 30px);
+      // width: calc((100% / 4) - 30px);
+      width: 270px;
       font-size: 14px;
       color: #757575;
       line-height: 1.714;
