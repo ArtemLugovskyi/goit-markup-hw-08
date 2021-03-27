@@ -22,7 +22,6 @@
 .header .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 @media screen and (min-width: 480px) {
@@ -124,6 +123,7 @@ a.logo {
   flex-direction: column;
   position: absolute;
   width: 100%;
+  height: 100vh;
   max-width: 480px;
   top: 0;
   left: 50%;
@@ -828,8 +828,8 @@ button:focus {
 }
 
 @media screen and (min-width: 768px) {
-  .header .container {
-    width: calc(100% - 30px);
+  .header-container {
+    width: 768px;
     height: 80px;
   }
   .mobile-menu,
@@ -901,13 +901,13 @@ button:focus {
   .header-left-navigation {
     margin: 0;
     flex-grow: 1;
-    justify-content: space-between;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .header-container {
-    margin: 0;
+    margin: 0 auto;
+    width: 1200px;
   }
   .header-address {
     align-items: center;
@@ -933,12 +933,6 @@ button:focus {
     color: #757575;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-bottom: 0;
-  }
-  .header-left-navigation {
-    flex-grow: 1;
-  }
-  .header-left-navigation .logo {
-    margin-left: 215px;
   }
   .phone {
     margin-left: 30px;
@@ -1500,7 +1494,6 @@ picture {
 }
 
 .footer .container > div {
-  flex-grow: 1;
   flex-shrink: 1;
   text-align: center;
 }
@@ -1558,6 +1551,8 @@ picture {
 .footer-form {
   display: flex;
   display: inline-block;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-form p {
@@ -1571,16 +1566,16 @@ picture {
 
 .footer-form form {
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .footer-form .footer-form-mail {
   display: flex;
   align-items: center;
+  width: calc(100% - 30px);
 }
 
 .footer-form-input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   background: transparent;
   padding: 15px;
@@ -1617,13 +1612,14 @@ picture {
     flex-direction: row;
   }
   .footer .footer-fist-part {
+    width: calc(100% - 85px);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
   }
-  .footer .social-footer {
-    padding-right: 74px;
+  .footer .footer-form-mail {
+    width: 450px;
   }
 }
 
