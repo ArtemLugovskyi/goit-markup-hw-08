@@ -55,7 +55,6 @@
 }
 
 .footer-form {
-  display: flex;
   display: inline-block;
   align-items: center;
   justify-content: center;
@@ -119,8 +118,10 @@
       width: calc(100% - 85px);
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
       align-items: flex-start;
+    }
+    & .social-footer {
+      padding-left: 165px;
     }
     & .footer-form-mail {
       width: 450px;
@@ -137,11 +138,14 @@
     }
     & .container {
       flex-wrap: nowrap;
-      justify-content: space-between;
     }
     & .social-footer {
       padding: 0;
       padding-left: 70px;
+
+      & .social-footer {
+        padding-left: 70px;
+      }
     }
   }
 
@@ -171,7 +175,6 @@
   }
 
   .footer-form {
-    display: inline-block;
     padding-left: 93px;
 
     & p {
@@ -179,6 +182,10 @@
     }
     & form {
       flex-direction: row;
+      width: 100%;
+    }
+    & .footer-form-mail {
+      width: 570px;
     }
   }
 

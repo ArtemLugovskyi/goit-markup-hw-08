@@ -22,6 +22,7 @@
     color: #2196f3;
     font-size: 34px;
     letter-spacing: 0.02em;
+    font-weight: 500;
   }
 }
 .header-right-navigation a {
@@ -154,6 +155,7 @@
   .main-menu {
     display: flex;
     list-style: none;
+    margin-left: 93px;
   }
   .main-menu a {
     position: relative;

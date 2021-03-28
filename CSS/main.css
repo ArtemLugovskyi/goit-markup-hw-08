@@ -124,7 +124,6 @@ a.logo {
   position: absolute;
   width: 100%;
   height: 100vh;
-  max-width: 480px;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -606,7 +605,6 @@ a.logo {
   list-style: none;
   width: 100%;
   display: flex;
-  margin-bottom: 40px;
 }
 
 .buttons button {
@@ -790,6 +788,7 @@ button:focus {
   color: #2196f3;
   font-size: 34px;
   letter-spacing: 0.02em;
+  font-weight: 500;
 }
 
 .header-right-navigation a {
@@ -920,6 +919,7 @@ button:focus {
   .main-menu {
     display: flex;
     list-style: none;
+    margin-left: 93px;
   }
   .main-menu a {
     position: relative;
@@ -1133,10 +1133,11 @@ picture {
   align-items: center;
   justify-content: center;
   padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 .pictures ul {
-  padding-bottom: 76px;
+  padding-top: 15px;
 }
 
 .pictures ul li {
@@ -1298,7 +1299,6 @@ picture {
     cursor: pointer;
   }
   .pictures ul {
-    padding-bottom: 64px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -1365,8 +1365,7 @@ picture {
     height: 70px;
   }
   .what-we-do {
-    padding-bottom: 123px;
-    padding-top: 94px;
+    padding: 94px 0;
   }
   .what-we-do-pictures {
     display: flex;
@@ -1399,6 +1398,7 @@ picture {
     background-color: #ffffff;
     box-shadow: 0px 2px 4px -1px #757575;
     border-radius: 3px;
+    margin-bottom: 0;
   }
   .our-team li:not(:last-child) {
     margin-right: 30px;
@@ -1420,6 +1420,9 @@ picture {
   .regular-customers {
     padding: 94px 0;
   }
+  .regular-customers h2 {
+    font-size: 36px;
+  }
   .customers-labels-link:hover,
   .customers-labels-link:focus {
     color: #2196f3;
@@ -1429,6 +1432,7 @@ picture {
   }
   .regular-customers ul li {
     width: calc((100% / 6) - 30px);
+    margin-bottom: 0;
   }
   .regular-customers ul li:not(:last-child) {
     margin-right: 30px;
@@ -1452,7 +1456,7 @@ picture {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding-top: 112px;
+    padding: 94px 15px 64px;
   }
   .portfolio .container {
     margin: 0;
@@ -1549,7 +1553,6 @@ picture {
 }
 
 .footer-form {
-  display: flex;
   display: inline-block;
   align-items: center;
   justify-content: center;
@@ -1615,8 +1618,10 @@ picture {
     width: calc(100% - 85px);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: flex-start;
+  }
+  .footer .social-footer {
+    padding-left: 165px;
   }
   .footer .footer-form-mail {
     width: 450px;
@@ -1633,10 +1638,12 @@ picture {
   }
   .footer .container {
     flex-wrap: nowrap;
-    justify-content: space-between;
   }
   .footer .social-footer {
     padding: 0;
+    padding-left: 70px;
+  }
+  .footer .social-footer .social-footer {
     padding-left: 70px;
   }
   .footer-container ul a {
@@ -1661,7 +1668,6 @@ picture {
     font-style: normal;
   }
   .footer-form {
-    display: inline-block;
     padding-left: 93px;
   }
   .footer-form p {
@@ -1669,6 +1675,10 @@ picture {
   }
   .footer-form form {
     flex-direction: row;
+    width: 100%;
+  }
+  .footer-form .footer-form-mail {
+    width: 570px;
   }
   .footer-form-input {
     width: 358px;
